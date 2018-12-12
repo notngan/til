@@ -10,9 +10,10 @@ window.onload = function () {
   const btnSubmit = document.getElementById('btn-submit');
   const indexPage = document.getElementById('index');
   const indexMain = document.getElementById('index-main');
+
   // GET DATA
   getData();
-  
+
   function getData () {
     db.ref('tils').once('value').then(function (snap) { 
       const data = [];
@@ -48,6 +49,7 @@ window.onload = function () {
         article.appendChild(h2);
         article.appendChild(p);
         article.appendChild(ptime);
+
         indexMain.appendChild(article);
       });
       //console.log(indexMain)
