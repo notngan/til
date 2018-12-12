@@ -36,7 +36,7 @@ window.onload = function () {
       //   </p>
       //   <p class="mt-0 text-right"><small>15:11</small></p>
       // </article>
-      data.forEach((item) => {
+      data.reverse().forEach((item) => {
         let article = document.createElement('article');
         let h2 = document.createElement('h2');
         let p = document.createElement('p');
