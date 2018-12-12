@@ -1,0 +1,104 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>today i learned</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>  
+
+  <body>
+    <div id="index">
+      <header class="py-2 sticky-top">
+        <div class="container">
+          <div class="px-3 row align-items-center justify-content-between">
+            <div class="col-xs-9">
+              <h1>today i learned</h1>
+            </div>
+            <div class="col-xs-3">
+              <a id="button-new" href="./form.html" target="_blank">new</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <main id="index-main">
+          <article>
+            <h2>2018/12/11, til</h2> 
+            <p class="mb-0"><span class="add-margin">&#x268A;</span>that `addEventListener('click', ... )` in JavaScript is <a href="https://stackoverflow.com/questions/6348494/addeventlistener-vs-onclick">different</a> from `onclick` because it doesn't overwrite existing event handlers, whereas `onclick` does.
+            </p>
+            <p class="mt-0 text-right"><small>15:11</small></p>
+          </article>
+
+        
+        </main>
+      </div>
+
+      <footer class="py-1">
+        <small class="text-center">a silly project by <a href="https://github.com/notngan" target="_blank">ngan b. nguyen</a></small>
+      </footer>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAiP7TP2FPaBCl6ZRYncK9UTlnALzdUvFI",
+        authDomain: "til-blog-433c9.firebaseapp.com",
+        databaseURL: "https://til-blog-433c9.firebaseio.com",
+        projectId: "til-blog-433c9",
+        storageBucket: "til-blog-433c9.appspot.com",
+        messagingSenderId: "189183220893"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+<style>
+  body {
+    background: #333;
+    color: #d9d9d9;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .container {
+    max-width: 700px;
+  }
+  header {
+    background: #212121;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-weight: thin;
+    font-size: 1.5rem;
+  }
+  article {
+    margin: 50px 0;
+  }
+  article p {
+    color: #b3b3b3;
+  }
+  .add-margin {
+    margin-right: 10px;
+  }
+  #button-new, a {
+    color: orange;
+  }
+  footer {
+    width: 100%;
+    background: #212121;
+    position: fixed;
+    bottom: 0;
+  }
+  footer small {
+    display: block;
+    color: #999;
+    font-size: 11px;
+  }
+</style>
