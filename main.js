@@ -12,7 +12,9 @@ window.onload = function () {
   const indexMain = document.getElementById('index-main');
 
   // GET DATA
-  getData();
+  if (indexPage) {
+    getData();
+  }
 
   function getData () {
     db.ref('tils').once('value').then(function (snap) { 
